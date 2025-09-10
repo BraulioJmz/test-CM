@@ -13,6 +13,9 @@ def promedio_edades(df):
     # Calcula el promedio de la columna "Edad"
     return df["Edad"].mean()
 
+def estadisticas_edades(df):
+    return df["Edad"].min(), df["Edad"].max()
+
 if __name__ == "__main__":
     print("Demo CM solo con pandas v1.0.0")
     tabla = crear_tabla()
